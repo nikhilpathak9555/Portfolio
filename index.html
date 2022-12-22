@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<!--     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/bb27e45311.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Nikhil</span> <br>From Ghaziabad</h1>
+        </div>
+      </div>
+    </div>
+<!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img1.png" alt="">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>HI... I am Nikhil Pathak. I completed my gaduation in B.Tech computer science from AKTU university(Lucknow).
+            my long term goal is to achieve a good position where i build my career and help the organization too.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML /CSS /BOOTSTRAP</span><br></li>
+                <li><span>PYTHON /JAVASCRIPT/ C++ </span><br></li>
+                <li><span>MICROSOFT POWERAPP</span><br></li>
+                <li><span>WORDPRESS</span><br></li>
+                <li><span>MS SQL</span><br></li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>6 Months Experience As a Powerapp Developer</span><br>using powerapps, i can build quickly custom business apps that connect to your data stored either in the underlying data platform( Microsoft Dataverse) or in various online and on-premises data sources(such as sharepount, Microsoft 365, SQL server and so on.)</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Bachelor’s In Computer Science</span><br>Dr. A.P.J. Abdul Kalam Technical University , Uttar Pradesh<br>August 2018 to August 2022 </li>
+                <li><span>Higher Secondary(12th Pass) in PCM</span><br>National Public School - Rajender Nagar, Ghaziabad<br>July 2016 to July 2018</li>
+                <li><span>Secondary(10th Pass)</span><br>National Public School - Rajender Nagar, Sahibabad<br>July 2014 to June 2016</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>i can make any type of front-end design like social-media,Blog and webportal etc with the help of HTML ,CSS and JAVASCRIPT.</p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <h2>powerapps</h2>
+            <p>Powerapps is a platform as a service with the help of powerapp platform i make any native app related to any organization</p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database</h2>
+            <p>i am fluent in making any type of database and able to perform any type of operation with the help of MS SQL.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>LMS App</h3>
+              <p>it's a lead management system for manage the lead from research data to sales team.</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+              <h3>OTT App</h3>
+              <p>The purpose of the project "for reaching our targeted audience directly with our content".</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>it calculate total purchase amounts, taxes, and shipping costs; process payments; and send orders.</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        <a href="" class="btn">See More</a>
+      </div>
+    </div>
+
+   <!--  contact -->
+
+    <div id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>nikhilpathak80253@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9555485556</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Nikhil. Made With <i class="fa-solid fa-heart"></i> By Nikhil Pathak</p>
+      </div>
+    </div>
+
+
+  <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+    <script>
+
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemeu.style.right = "0";
+      }
+      function closemenu(){
+        sidemeu.style.right = "-200px"
+      }
+    </script>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxUrJ2KeAPzrGK-poTGtJZzyZbXWJAezhzixEValB6cvvaLe0UIT6Ys3gvJKtI1PW1u/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Messge Sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+      },5000)
+      form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
